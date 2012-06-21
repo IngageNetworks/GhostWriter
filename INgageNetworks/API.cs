@@ -13,11 +13,8 @@ namespace INgageNetworks
 		private readonly string _userName;
 		private readonly string _password;
 		private IRestClient _client;
-
-		//for dev use only otherwise remove the value part.
-		private string _accessToken /*= "7f9704c9063a489899b9b9262dd3b734"*/;
-
-		private readonly string _apiKey /*= "74a51b4bd780eea3d52e9eccacbe94da"*/;
+		private string _accessToken;
+		private readonly string _apiKey;
 
 		public Api(string userName, string password, string apiKey)
 		{

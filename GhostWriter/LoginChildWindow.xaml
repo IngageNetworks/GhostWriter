@@ -1,0 +1,29 @@
+﻿<tk:ChildWindow x:Class="GhostWriter.LoginChildWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tk="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    mc:Ignorable="d"
+                 VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+    Title="Login"
+
+                BorderBrush="Black"
+                BorderThickness="2"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneAccentBrush}"
+    d:DesignHeight="256" d:DesignWidth="480"
+    HasCloseButton="false">
+
+	<Grid x:Name="LayoutRoot" Height="202" Background="{StaticResource PhoneBackgroundBrush}">
+		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="User: " VerticalAlignment="Top" Margin="20,43,0,0"/>
+		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password: " VerticalAlignment="Top" Margin="20,104,0,0"/>
+		<TextBox x:Name="txtUserId" VerticalAlignment="Top" Margin="117,23,8,0" Height="62" FontSize="18.667" TabIndex="1"  KeyUp="txtUserId_KeyUp"/>
+		<PasswordBox x:Name="txtPassword"  VerticalAlignment="Top" Margin="117,85,8,0" Height="62" FontSize="18.667"   TabIndex="2" KeyUp="txtPassword_KeyUp"  MouseLeftButtonUp="txtPassword_MouseLeftButtonUp"/>
+
+		<Button x:Name="btnLogin" Content="Login" Margin="117,132,214,0" d:LayoutOverrides="Width" Click="btnLogin_Click" FontSize="18.667" BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="1" Foreground="{StaticResource PhoneForegroundBrush}" Background="{StaticResource PhoneInactiveBrush}" Height="58" VerticalAlignment="Top" FontFamily="Tahoma" TabIndex="3" />
+		<!--<Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="232,132,0,0" VerticalAlignment="Top" FontSize="18.667" BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="1" Foreground="{StaticResource PhoneForegroundBrush}" Background="{StaticResource PhoneInactiveBrush}" Height="58" FontFamily="Tahoma" Click="btnCancel_Click" />-->
+	</Grid>
+</tk:ChildWindow>
